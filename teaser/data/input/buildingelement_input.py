@@ -8,10 +8,14 @@ This module contains function to load building element classes
 
 from teaser.logic.buildingobjects.buildingphysics.layer import Layer
 from teaser.logic.buildingobjects.buildingphysics.material import Material
+import teaser.data.input.material_input as mat_input
 
 
-def load_type_element(element, year, construction):
-    '''Typical element loader.
+def load_type_element(element,
+                      year,
+                      construction,
+                      data_class):
+    """Typical element loader.
 
     Loads typical building elements according to their construction
     year and their construction type from a XML. The elements are created by
@@ -30,21 +34,22 @@ def load_type_element(element, year, construction):
     construction : str
         Construction type, code list ('heavy', 'light')
 
-    Raises
-    ----------
-    Assert if parents to Building are not set
-    '''
+    data_class : DataClass()
+        DataClass containing the bindings for TypeBuildingElement and
+        Material (typically this is the data class stored in prj.data,
+        but the user can individually change that.
 
-    ass_error_1 = "You need to specify parents for element and thermalzone"
 
-    assert element.parent.parent.parent is not None, ass_error_1
+    """
+
+    element_binding = data_class.element_bind
+    mat_binding = data_class.material_bind
 
     element.year_of_construction = year
 
     if type(element).__name__ == 'OuterWall':
 
-        for out_wall in element.parent.parent.parent.\
-                data.element_bind.OuterWall:
+        for out_wall in element_binding.OuterWall:
             if out_wall.building_age_group[0] <= year <= \
                     out_wall.building_age_group[1] and \
                     out_wall.construction_type == construction:
@@ -54,15 +59,14 @@ def load_type_element(element, year, construction):
 
                     layer = Layer(element)
                     material = Material(layer)
-                    _set_layer_data(element=element,
-                                    material=material,
+                    _set_layer_data(material=material,
                                     layer=layer,
-                                    pyxb_class=pyxb_layer)
+                                    pyxb_class=pyxb_layer,
+                                    mat_binding=mat_binding)
 
     elif type(element).__name__ == 'InnerWall':
 
-        for in_wall in element.parent.parent.\
-                parent.data.element_bind.InnerWall:
+        for in_wall in element_binding.InnerWall:
             if in_wall.building_age_group[0] <= year <= \
                     in_wall.building_age_group[1] and \
                     in_wall.construction_type == construction:
@@ -72,14 +76,14 @@ def load_type_element(element, year, construction):
 
                     layer = Layer(element)
                     material = Material(layer)
-                    _set_layer_data(element=element,
-                                    material=material,
+                    _set_layer_data(material=material,
                                     layer=layer,
-                                    pyxb_class=pyxb_layer)
+                                    pyxb_class=pyxb_layer,
+                                    mat_binding=mat_binding)
 
     elif type(element).__name__ == 'Floor':
 
-        for floor in element.parent.parent.parent.data.element_bind.Floor:
+        for floor in element_binding.Floor:
             if floor.building_age_group[0] <= year <= \
                     floor.building_age_group[1] and \
                     floor.construction_type == construction:
@@ -89,15 +93,14 @@ def load_type_element(element, year, construction):
 
                     layer = Layer(element)
                     material = Material(layer)
-                    _set_layer_data(element=element,
-                                    material=material,
+                    _set_layer_data(material=material,
                                     layer=layer,
-                                    pyxb_class=pyxb_layer)
+                                    pyxb_class=pyxb_layer,
+                                    mat_binding=mat_binding)
 
     elif type(element).__name__ == 'Ceiling':
 
-        for ceiling in element.parent.parent.\
-                parent.data.element_bind.Ceiling:
+        for ceiling in element_binding.Ceiling:
             if ceiling.building_age_group[0] <= year <= \
                     ceiling.building_age_group[1] and \
                     ceiling.construction_type == construction:
@@ -107,15 +110,14 @@ def load_type_element(element, year, construction):
 
                     layer = Layer(element)
                     material = Material(layer)
-                    _set_layer_data(element=element,
-                                    material=material,
+                    _set_layer_data(material=material,
                                     layer=layer,
-                                    pyxb_class=pyxb_layer)
+                                    pyxb_class=pyxb_layer,
+                                    mat_binding=mat_binding)
 
     elif type(element).__name__ == 'GroundFloor':
 
-        for gr_floor in element.parent.parent.\
-                parent.data.element_bind.GroundFloor:
+        for gr_floor in element_binding.GroundFloor:
             if gr_floor.building_age_group[0] <= year <= \
                     gr_floor.building_age_group[1] and \
                     gr_floor.construction_type == construction:
@@ -125,14 +127,14 @@ def load_type_element(element, year, construction):
 
                     layer = Layer(element)
                     material = Material(layer)
-                    _set_layer_data(element=element,
-                                    material=material,
+                    _set_layer_data(material=material,
                                     layer=layer,
-                                    pyxb_class=pyxb_layer)
+                                    pyxb_class=pyxb_layer,
+                                    mat_binding=mat_binding)
 
     elif type(element).__name__ == 'Rooftop':
 
-        for roof in element.parent.parent.parent.data.element_bind.Rooftop:
+        for roof in element_binding.Rooftop:
             if roof.building_age_group[0] <= year <= \
                     roof.building_age_group[1] and \
                     roof.construction_type == construction:
@@ -142,14 +144,14 @@ def load_type_element(element, year, construction):
 
                     layer = Layer(element)
                     material = Material(layer)
-                    _set_layer_data(element=element,
-                                    material=material,
+                    _set_layer_data(material=material,
                                     layer=layer,
-                                    pyxb_class=pyxb_layer)
+                                    pyxb_class=pyxb_layer,
+                                    mat_binding=mat_binding)
 
     elif type(element).__name__ == 'Window':
 
-        for win in element.parent.parent.parent.data.element_bind.Window:
+        for win in element_binding.Window:
             if win.building_age_group[0] <= year <= \
                     win.building_age_group[1] and win.construction_type == \
                     construction:
@@ -159,12 +161,13 @@ def load_type_element(element, year, construction):
 
                     layer = Layer(element)
                     material = Material(layer)
-                    _set_layer_data(element=element,
-                                    material=material,
+                    _set_layer_data(material=material,
                                     layer=layer,
-                                    pyxb_class=pyxb_layer)
+                                    pyxb_class=pyxb_layer,
+                                    mat_binding=mat_binding)
 
-def _set_layer_data(element, material, layer, pyxb_class):
+
+def _set_layer_data(material, layer, pyxb_class, mat_binding):
     '''Helper function for load_type_element to set the layer data.
 
     Parameters
@@ -181,15 +184,11 @@ def _set_layer_data(element, material, layer, pyxb_class):
 
     layer.thickness = pyxb_class.thickness
     layer.id = pyxb_class.id
+    print(pyxb_class.material.material_id)
+    mat_input.load_material_id(material,
+                               pyxb_class.material.material_id,
+                               mat_binding)
 
-    material.name = pyxb_class.Material.name
-    material.density = pyxb_class.Material.density
-    material.thermal_conduc = pyxb_class.Material.thermal_conduc
-    material.heat_capac = pyxb_class.Material.heat_capac
-    if pyxb_class.Material.solar_absorp is not None:
-        material.solar_absorp = pyxb_class.Material.solar_absorp
-    if pyxb_class.Material.ir_emissivity is not None:
-        material.ir_emissivity = pyxb_class.Material.ir_emissivity
 
 def _set_basic_data(element, pyxb_class):
     '''Helper function for load_type_element to set the layer data.
