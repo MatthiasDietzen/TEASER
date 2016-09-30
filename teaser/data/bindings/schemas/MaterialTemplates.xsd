@@ -10,6 +10,11 @@
       <xs:element type="xs:float" name="heat_capac"/>
       <xs:element minOccurs="0" type="xs:float" name="solar_absorp"/>
       <xs:element minOccurs="0" type="xs:float" name="ir_emissivity"/>
+      <xs:element minOccurs="0" type="xs:float" name="PE_non_regenerable"/>
+      <xs:element minOccurs="0" type="xs:float" name="PE_regenerable"/>
+      <xs:element minOccurs="0" type="xs:float" name="GWP_100"/>
+      <xs:element minOccurs="0" type="xs:float" name="AP"/>
+      <xs:element minOccurs="0" type="xs:float" name="cost"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="MaterialTemplatesType">

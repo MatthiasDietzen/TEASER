@@ -1,7 +1,7 @@
 # .\material_bind.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:e92452c8d3e28a9e27abfc9994d2007779e7f4c9
-# Generated 2016-09-26 09:44:02.669237 by PyXB version 1.2.4 using Python 3.5.2.final.0
+# Generated 2016-09-30 13:42:17.961899 by PyXB version 1.2.4 using Python 3.5.2.final.0
 # Namespace AbsentNamespace0
 
 from __future__ import unicode_literals
@@ -15,7 +15,7 @@ import sys
 import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
-_GenerationUID = pyxb.utils.utility.UniqueIdentifier('urn:uuid:fe5d63c8-83bc-11e6-9f44-2cd444b2e704')
+_GenerationUID = pyxb.utils.utility.UniqueIdentifier('urn:uuid:f0ac46a6-8702-11e6-b3a2-54ee7579a8e4')
 
 # Version of PyXB used to generate the bindings
 _PyXBVersion = '1.2.4'
@@ -80,57 +80,92 @@ class MaterialType (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MaterialType')
-    _XSDLocation = pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 4, 2)
+    _XSDLocation = pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 4, 2)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
     # Element name uses Python identifier name
-    __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'name'), 'name', '__AbsentNamespace0_MaterialType_name', False, pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 7, 6), )
+    __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'name'), 'name', '__AbsentNamespace0_MaterialType_name', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 7, 6), )
 
     
     name = property(__name.value, __name.set, None, None)
 
     
     # Element density uses Python identifier density
-    __density = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'density'), 'density', '__AbsentNamespace0_MaterialType_density', False, pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 8, 6), )
+    __density = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'density'), 'density', '__AbsentNamespace0_MaterialType_density', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 8, 6), )
 
     
     density = property(__density.value, __density.set, None, None)
 
     
     # Element thermal_conduc uses Python identifier thermal_conduc
-    __thermal_conduc = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'thermal_conduc'), 'thermal_conduc', '__AbsentNamespace0_MaterialType_thermal_conduc', False, pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 9, 6), )
+    __thermal_conduc = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'thermal_conduc'), 'thermal_conduc', '__AbsentNamespace0_MaterialType_thermal_conduc', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 9, 6), )
 
     
     thermal_conduc = property(__thermal_conduc.value, __thermal_conduc.set, None, None)
 
     
     # Element heat_capac uses Python identifier heat_capac
-    __heat_capac = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'heat_capac'), 'heat_capac', '__AbsentNamespace0_MaterialType_heat_capac', False, pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 10, 6), )
+    __heat_capac = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'heat_capac'), 'heat_capac', '__AbsentNamespace0_MaterialType_heat_capac', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 10, 6), )
 
     
     heat_capac = property(__heat_capac.value, __heat_capac.set, None, None)
 
     
     # Element solar_absorp uses Python identifier solar_absorp
-    __solar_absorp = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'solar_absorp'), 'solar_absorp', '__AbsentNamespace0_MaterialType_solar_absorp', False, pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 11, 6), )
+    __solar_absorp = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'solar_absorp'), 'solar_absorp', '__AbsentNamespace0_MaterialType_solar_absorp', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 11, 6), )
 
     
     solar_absorp = property(__solar_absorp.value, __solar_absorp.set, None, None)
 
     
     # Element ir_emissivity uses Python identifier ir_emissivity
-    __ir_emissivity = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'ir_emissivity'), 'ir_emissivity', '__AbsentNamespace0_MaterialType_ir_emissivity', False, pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 12, 6), )
+    __ir_emissivity = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'ir_emissivity'), 'ir_emissivity', '__AbsentNamespace0_MaterialType_ir_emissivity', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 12, 6), )
 
     
     ir_emissivity = property(__ir_emissivity.value, __ir_emissivity.set, None, None)
 
     
+    # Element PE_non_regenerable uses Python identifier PE_non_regenerable
+    __PE_non_regenerable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'PE_non_regenerable'), 'PE_non_regenerable', '__AbsentNamespace0_MaterialType_PE_non_regenerable', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 13, 6), )
+
+    
+    PE_non_regenerable = property(__PE_non_regenerable.value, __PE_non_regenerable.set, None, None)
+
+    
+    # Element PE_regenerable uses Python identifier PE_regenerable
+    __PE_regenerable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'PE_regenerable'), 'PE_regenerable', '__AbsentNamespace0_MaterialType_PE_regenerable', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 14, 6), )
+
+    
+    PE_regenerable = property(__PE_regenerable.value, __PE_regenerable.set, None, None)
+
+    
+    # Element GWP_100 uses Python identifier GWP_100
+    __GWP_100 = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'GWP_100'), 'GWP_100', '__AbsentNamespace0_MaterialType_GWP_100', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 15, 6), )
+
+    
+    GWP_100 = property(__GWP_100.value, __GWP_100.set, None, None)
+
+    
+    # Element AP uses Python identifier AP
+    __AP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'AP'), 'AP', '__AbsentNamespace0_MaterialType_AP', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 16, 6), )
+
+    
+    AP = property(__AP.value, __AP.set, None, None)
+
+    
+    # Element cost uses Python identifier cost
+    __cost = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'cost'), 'cost', '__AbsentNamespace0_MaterialType_cost', False, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 17, 6), )
+
+    
+    cost = property(__cost.value, __cost.set, None, None)
+
+    
     # Attribute material_id uses Python identifier material_id
     __material_id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'material_id'), 'material_id', '__AbsentNamespace0_MaterialType_material_id', pyxb.binding.datatypes.string)
-    __material_id._DeclarationLocation = pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 5, 1)
-    __material_id._UseLocation = pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 5, 1)
+    __material_id._DeclarationLocation = pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 5, 1)
+    __material_id._UseLocation = pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 5, 1)
     
     material_id = property(__material_id.value, __material_id.set, None, None)
 
@@ -140,7 +175,12 @@ class MaterialType (pyxb.binding.basis.complexTypeDefinition):
         __thermal_conduc.name() : __thermal_conduc,
         __heat_capac.name() : __heat_capac,
         __solar_absorp.name() : __solar_absorp,
-        __ir_emissivity.name() : __ir_emissivity
+        __ir_emissivity.name() : __ir_emissivity,
+        __PE_non_regenerable.name() : __PE_non_regenerable,
+        __PE_regenerable.name() : __PE_regenerable,
+        __GWP_100.name() : __GWP_100,
+        __AP.name() : __AP,
+        __cost.name() : __cost
     })
     _AttributeMap.update({
         __material_id.name() : __material_id
@@ -155,13 +195,13 @@ class MaterialTemplatesType (pyxb.binding.basis.complexTypeDefinition):
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, 'MaterialTemplatesType')
-    _XSDLocation = pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 15, 2)
+    _XSDLocation = pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 20, 2)
     _ElementMap = {}
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
     # Element Material uses Python identifier Material
-    __Material = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'Material'), 'Material', '__AbsentNamespace0_MaterialTemplatesType_Material', True, pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 18, 6), )
+    __Material = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(None, 'Material'), 'Material', '__AbsentNamespace0_MaterialTemplatesType_Material', True, pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 23, 6), )
 
     
     Material = property(__Material.value, __Material.set, None, None)
@@ -169,8 +209,8 @@ class MaterialTemplatesType (pyxb.binding.basis.complexTypeDefinition):
     
     # Attribute version uses Python identifier version
     __version = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'version'), 'version', '__AbsentNamespace0_MaterialTemplatesType_version', pyxb.binding.datatypes.string)
-    __version._DeclarationLocation = pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 16, 4)
-    __version._UseLocation = pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 16, 4)
+    __version._DeclarationLocation = pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 21, 4)
+    __version._UseLocation = pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 21, 4)
     
     version = property(__version.value, __version.set, None, None)
 
@@ -183,22 +223,32 @@ class MaterialTemplatesType (pyxb.binding.basis.complexTypeDefinition):
 Namespace.addCategoryObject('typeBinding', 'MaterialTemplatesType', MaterialTemplatesType)
 
 
-MaterialTemplates = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'MaterialTemplates'), MaterialTemplatesType, location=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 3, 2))
+MaterialTemplates = pyxb.binding.basis.element(pyxb.namespace.ExpandedName(Namespace, 'MaterialTemplates'), MaterialTemplatesType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 3, 2))
 Namespace.addCategoryObject('elementBinding', MaterialTemplates.name().localName(), MaterialTemplates)
 
 
 
-MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'name'), pyxb.binding.datatypes.string, scope=MaterialType, location=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 7, 6)))
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'name'), pyxb.binding.datatypes.string, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 7, 6)))
 
-MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'density'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 8, 6)))
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'density'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 8, 6)))
 
-MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'thermal_conduc'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 9, 6)))
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'thermal_conduc'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 9, 6)))
 
-MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'heat_capac'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 10, 6)))
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'heat_capac'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 10, 6)))
 
-MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'solar_absorp'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 11, 6)))
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'solar_absorp'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 11, 6)))
 
-MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'ir_emissivity'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 12, 6)))
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'ir_emissivity'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 12, 6)))
+
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'PE_non_regenerable'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 13, 6)))
+
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'PE_regenerable'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 14, 6)))
+
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'GWP_100'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 15, 6)))
+
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'AP'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 16, 6)))
+
+MaterialType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'cost'), pyxb.binding.datatypes.float, scope=MaterialType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 17, 6)))
 
 def _BuildAutomaton ():
     # Remove this helper function from the namespace after it is invoked
@@ -207,37 +257,72 @@ def _BuildAutomaton ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 11, 6))
+    cc_0 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 11, 6))
     counters.add(cc_0)
-    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 12, 6))
+    cc_1 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 12, 6))
     counters.add(cc_1)
+    cc_2 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 13, 6))
+    counters.add(cc_2)
+    cc_3 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 14, 6))
+    counters.add(cc_3)
+    cc_4 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 15, 6))
+    counters.add(cc_4)
+    cc_5 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 16, 6))
+    counters.add(cc_5)
+    cc_6 = fac.CounterCondition(min=0, max=1, metadata=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 17, 6))
+    counters.add(cc_6)
     states = []
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'name')), pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 7, 6))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'name')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 7, 6))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'density')), pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 8, 6))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'density')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 8, 6))
     st_1 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_1)
     final_update = None
-    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'thermal_conduc')), pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 9, 6))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'thermal_conduc')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 9, 6))
     st_2 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_2)
     final_update = set()
-    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'heat_capac')), pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 10, 6))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'heat_capac')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 10, 6))
     st_3 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_3)
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
-    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'solar_absorp')), pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 11, 6))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'solar_absorp')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 11, 6))
     st_4 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_4)
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_1, False))
-    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'ir_emissivity')), pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 12, 6))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'ir_emissivity')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 12, 6))
     st_5 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
     states.append(st_5)
+    final_update = set()
+    final_update.add(fac.UpdateInstruction(cc_2, False))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'PE_non_regenerable')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 13, 6))
+    st_6 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
+    states.append(st_6)
+    final_update = set()
+    final_update.add(fac.UpdateInstruction(cc_3, False))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'PE_regenerable')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 14, 6))
+    st_7 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
+    states.append(st_7)
+    final_update = set()
+    final_update.add(fac.UpdateInstruction(cc_4, False))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'GWP_100')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 15, 6))
+    st_8 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
+    states.append(st_8)
+    final_update = set()
+    final_update.add(fac.UpdateInstruction(cc_5, False))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'AP')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 16, 6))
+    st_9 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
+    states.append(st_9)
+    final_update = set()
+    final_update.add(fac.UpdateInstruction(cc_6, False))
+    symbol = pyxb.binding.content.ElementUse(MaterialType._UseForTag(pyxb.namespace.ExpandedName(None, 'cost')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 17, 6))
+    st_10 = fac.State(symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False)
+    states.append(st_10)
     transitions = []
     transitions.append(fac.Transition(st_1, [
          ]))
@@ -255,24 +340,94 @@ def _BuildAutomaton ():
          ]))
     transitions.append(fac.Transition(st_5, [
          ]))
+    transitions.append(fac.Transition(st_6, [
+         ]))
+    transitions.append(fac.Transition(st_7, [
+         ]))
+    transitions.append(fac.Transition(st_8, [
+         ]))
+    transitions.append(fac.Transition(st_9, [
+         ]))
+    transitions.append(fac.Transition(st_10, [
+         ]))
     st_3._set_transitionSet(transitions)
     transitions = []
     transitions.append(fac.Transition(st_4, [
         fac.UpdateInstruction(cc_0, True) ]))
     transitions.append(fac.Transition(st_5, [
         fac.UpdateInstruction(cc_0, False) ]))
+    transitions.append(fac.Transition(st_6, [
+        fac.UpdateInstruction(cc_0, False) ]))
+    transitions.append(fac.Transition(st_7, [
+        fac.UpdateInstruction(cc_0, False) ]))
+    transitions.append(fac.Transition(st_8, [
+        fac.UpdateInstruction(cc_0, False) ]))
+    transitions.append(fac.Transition(st_9, [
+        fac.UpdateInstruction(cc_0, False) ]))
+    transitions.append(fac.Transition(st_10, [
+        fac.UpdateInstruction(cc_0, False) ]))
     st_4._set_transitionSet(transitions)
     transitions = []
     transitions.append(fac.Transition(st_5, [
         fac.UpdateInstruction(cc_1, True) ]))
+    transitions.append(fac.Transition(st_6, [
+        fac.UpdateInstruction(cc_1, False) ]))
+    transitions.append(fac.Transition(st_7, [
+        fac.UpdateInstruction(cc_1, False) ]))
+    transitions.append(fac.Transition(st_8, [
+        fac.UpdateInstruction(cc_1, False) ]))
+    transitions.append(fac.Transition(st_9, [
+        fac.UpdateInstruction(cc_1, False) ]))
+    transitions.append(fac.Transition(st_10, [
+        fac.UpdateInstruction(cc_1, False) ]))
     st_5._set_transitionSet(transitions)
+    transitions = []
+    transitions.append(fac.Transition(st_6, [
+        fac.UpdateInstruction(cc_2, True) ]))
+    transitions.append(fac.Transition(st_7, [
+        fac.UpdateInstruction(cc_2, False) ]))
+    transitions.append(fac.Transition(st_8, [
+        fac.UpdateInstruction(cc_2, False) ]))
+    transitions.append(fac.Transition(st_9, [
+        fac.UpdateInstruction(cc_2, False) ]))
+    transitions.append(fac.Transition(st_10, [
+        fac.UpdateInstruction(cc_2, False) ]))
+    st_6._set_transitionSet(transitions)
+    transitions = []
+    transitions.append(fac.Transition(st_7, [
+        fac.UpdateInstruction(cc_3, True) ]))
+    transitions.append(fac.Transition(st_8, [
+        fac.UpdateInstruction(cc_3, False) ]))
+    transitions.append(fac.Transition(st_9, [
+        fac.UpdateInstruction(cc_3, False) ]))
+    transitions.append(fac.Transition(st_10, [
+        fac.UpdateInstruction(cc_3, False) ]))
+    st_7._set_transitionSet(transitions)
+    transitions = []
+    transitions.append(fac.Transition(st_8, [
+        fac.UpdateInstruction(cc_4, True) ]))
+    transitions.append(fac.Transition(st_9, [
+        fac.UpdateInstruction(cc_4, False) ]))
+    transitions.append(fac.Transition(st_10, [
+        fac.UpdateInstruction(cc_4, False) ]))
+    st_8._set_transitionSet(transitions)
+    transitions = []
+    transitions.append(fac.Transition(st_9, [
+        fac.UpdateInstruction(cc_5, True) ]))
+    transitions.append(fac.Transition(st_10, [
+        fac.UpdateInstruction(cc_5, False) ]))
+    st_9._set_transitionSet(transitions)
+    transitions = []
+    transitions.append(fac.Transition(st_10, [
+        fac.UpdateInstruction(cc_6, True) ]))
+    st_10._set_transitionSet(transitions)
     return fac.Automaton(states, counters, False, containing_state=None)
 MaterialType._Automaton = _BuildAutomaton()
 
 
 
 
-MaterialTemplatesType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'Material'), MaterialType, scope=MaterialTemplatesType, location=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 18, 6)))
+MaterialTemplatesType._AddElement(pyxb.binding.basis.element(pyxb.namespace.ExpandedName(None, 'Material'), MaterialType, scope=MaterialTemplatesType, location=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 23, 6)))
 
 def _BuildAutomaton_ ():
     # Remove this helper function from the namespace after it is invoked
@@ -281,12 +436,12 @@ def _BuildAutomaton_ ():
     import pyxb.utils.fac as fac
 
     counters = set()
-    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 17, 1))
+    cc_0 = fac.CounterCondition(min=0, max=None, metadata=pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 22, 1))
     counters.add(cc_0)
     states = []
     final_update = set()
     final_update.add(fac.UpdateInstruction(cc_0, False))
-    symbol = pyxb.binding.content.ElementUse(MaterialTemplatesType._UseForTag(pyxb.namespace.ExpandedName(None, 'Material')), pyxb.utils.utility.Location('D:\\GIT\\pyxb\\scripts\\MaterialTemplates.xsd', 18, 6))
+    symbol = pyxb.binding.content.ElementUse(MaterialTemplatesType._UseForTag(pyxb.namespace.ExpandedName(None, 'Material')), pyxb.utils.utility.Location('C:\\Program Files\\WinPython-64bit-3.5.2.1Qt5\\python-3.5.2.amd64\\Lib\\site-packages\\pyxb-PyXB-1.2.5\\scripts\\MaterialTemplates.xsd', 23, 6))
     st_0 = fac.State(symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False)
     states.append(st_0)
     transitions = []

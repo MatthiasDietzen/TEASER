@@ -41,7 +41,24 @@ class Material(object):
 
     transmittance : float
         Coefficient of transmittanve of material
-
+        
+    PE_non_regenerable : float
+        used non regenerable primary energy input to built the material in MJ/kg
+        
+    PE_regenerable : float
+        used regenerable primary energy input to built the material in MJ/kg
+    
+    GWP_100 : float
+        global warming potential (greenhouse potential) emitted by the Material
+        over his whole lifecyle in kg CO2-Äqv./kg of Material
+        
+    AP : float
+        acidification potential caused by the Material
+        over his whole lifecyle in kg SO2-Äqv./kg of Material
+    
+    cost : float
+        material price in Euro/kg    
+        
     material_id : str(uuid)
         UUID of material, this is used to have similar behaviour like foreign
         key in SQL data bases for use in TypeBuildingElements and Material xml
@@ -65,6 +82,11 @@ class Material(object):
                 self._solar_absorp = 0.7
         self._ir_emissivity = 0.9
         self._transmittance = 0.0
+        self._PE_non_regenerable = 0.0
+        self._PE_regenerable = 0.0
+        self._GWP_100 = 0.0
+        self._AP = 0.0
+        self._cost = 0.0
 
         self.material_id = str(uuid.uuid1())
 
@@ -260,3 +282,93 @@ class Material(object):
                 self._transmittance = value
             except:
                 raise ValueError("Can't convert transmittance to float")
+                
+    @property
+    def PE_non_regenerable(self):
+        return self._PE_non_regenerable
+
+    @PE_non_regenerable.setter
+    def PE_non_regenerable(self, value):
+
+        if isinstance(value, float):
+            self._PE_non_regenerable = value
+        elif value is None:
+            self._PE_non_regenerable = value
+        else:
+            try:
+                value = float(value)
+                self._PE_non_regenerable = value
+            except:
+                raise ValueError("Can't convert PE_non_regenerable to float")
+
+    @property
+    def PE_regenerable(self):
+        return self._PE_regenerable
+        
+    @PE_regenerable.setter
+    def PE_regenerable(self, value):
+
+        if isinstance(value, float):
+            self._PE_regenerable = value
+        elif value is None:
+            self._PE_regenerable = value
+        else:
+            try:
+                value = float(value)
+                self._PE_regenerable = value
+            except:
+                raise ValueError("Can't convert PE_regenerable to float")
+
+    @property
+    def GWP_100(self):
+        return self._GWP_100
+
+    @GWP_100.setter
+    def GWP_100(self, value):
+
+        if isinstance(value, float):
+            self._GWP_100 = value
+        elif value is None:
+            self._GWP_100 = value
+        else:
+            try:
+                value = float(value)
+                self._GWP_100 = value
+            except:
+                raise ValueError("Can't convert GWP_100 to float")
+
+    @property
+    def AP(self):
+        return self._AP
+
+    @AP.setter
+    def AP(self, value):
+
+        if isinstance(value, float):
+            self._AP = value
+        elif value is None:
+            self._AP = value
+        else:
+            try:
+                value = float(value)
+                self._AP = value
+            except:
+                raise ValueError("Can't convert AP to float")
+                
+    @property
+    def cost(self):
+        return self._cost
+
+    @cost.setter
+    def cost(self, value):
+
+        if isinstance(value, float):
+            self._cost = value
+        elif value is None:
+            self._cost = value
+        else:
+            try:
+                value = float(value)
+                self._cost = value
+            except:
+                raise ValueError("Can't convert cost to float")

@@ -29,11 +29,6 @@
 		<density>120.0</density>
 		<thermal_conduc>0.04</thermal_conduc>
 		<heat_capac>1.0</heat_capac>
-		<PE_non_regenerable>15.25</PE_non_regenerable>
-		<PE_regenerable>9.15</PE_regenerable>
-		<GWP_100>1.09</GWP_100>
-		<AP>0.00209</AP>
-		<cost>7</cost>
 	</Material>
 	<Material material_id="0abaee5a-83ff-11e6-a1cb-2cd444b2e704">
 		<name>Lehmputz</name>
@@ -70,11 +65,6 @@
 		<density>2200.0</density>
 		<thermal_conduc>1.65</thermal_conduc>
 		<heat_capac>1.0</heat_capac>
-		<PE_non_regenerable>1036</PE_non_regenerable>
-		<PE_regenerable>51.9</PE_regenerable>
-		<GWP_100>138</GWP_100>
-		<AP>0.324</AP>
-		<cost>1000</cost>
 	</Material>
 	<Material material_id="0aba7915-83ff-11e6-8883-2cd444b2e704">
 		<name>Sandwichpaneel</name>
@@ -87,11 +77,6 @@
 		<density>1600.0</density>
 		<thermal_conduc>0.8</thermal_conduc>
 		<heat_capac>1.0</heat_capac>
-		<PE_non_regenerable>1.39</PE_non_regenerable>
-		<PE_regenerable>0.0326</PE_regenerable>
-		<GWP_100>0.214</GWP_100>
-		<AP>0.000202</AP>
-		<cost>10</cost>		
 	</Material>
 	<Material material_id="0abb8a96-83ff-11e6-99cf-2cd444b2e704">
 		<name>Ortbeton</name>
@@ -170,11 +155,6 @@
 		<density>1800.0</density>
 		<thermal_conduc>0.7</thermal_conduc>
 		<heat_capac>1.0</heat_capac>
-		<PE_non_regenerable>0.527</PE_non_regenerable>
-		<PE_regenerable>0.00497</PE_regenerable>
-		<GWP_100>0.0342</GWP_100>
-		<AP>0.0000347</AP>
-		<cost>1</cost>
 	</Material>
 	<Material material_id="0abbb1a3-83ff-11e6-b878-2cd444b2e704">
 		<name>Glas0_2016light_annex</name>
@@ -193,11 +173,6 @@
 		<density>800.0</density>
 		<thermal_conduc>0.25</thermal_conduc>
 		<heat_capac>1.0</heat_capac>
-		<PE_non_regenerable>1.6</PE_non_regenerable>
-		<PE_regenerable>0.272</PE_regenerable>
-		<GWP_100>0.126</GWP_100>
-		<AP>0.000228</AP>
-		<cost>5</cost>
 	</Material>
 	<Material material_id="0abb3c62-83ff-11e6-bd7a-2cd444b2e704">
 		<name>Highdensitybrick</name>
@@ -240,11 +215,6 @@
 		<density>2000.0</density>
 		<thermal_conduc>1.4</thermal_conduc>
 		<heat_capac>1.0</heat_capac>
-		<PE_non_regenerable>1.59</PE_non_regenerable>
-		<PE_regenerable>0.0249</PE_regenerable>
-		<GWP_100>0.179</GWP_100>
-		<AP>0.000364</AP>
-		<cost>1</cost>
 	</Material>
 	<Material material_id="0abaee4a-83ff-11e6-ae56-2cd444b2e704">
 		<name>XPS</name>
@@ -317,11 +287,6 @@
 		<density>0.0</density>
 		<thermal_conduc>0.12</thermal_conduc>
 		<heat_capac>0.0</heat_capac>
-		<PE_non_regenerable>60</PE_non_regenerable>
-		<PE_regenerable>50</PE_regenerable>
-		<GWP_100>-1.7</GWP_100>
-		<AP>0.00956</AP>
-		<cost>3</cost>
 	</Material>
 	<Material material_id="0abb8aa3-83ff-11e6-bfa4-2cd444b2e704">
 		<name>Glas0_1978Holzfenstereinfach</name>
@@ -334,21 +299,12 @@
 		<density>20.0</density>
 		<thermal_conduc>0.04</thermal_conduc>
 		<heat_capac>1.0</heat_capac>
-		<PE_non_regenerable>1922</PE_non_regenerable>
-		<PE_regenerable>16.4</PE_regenerable>
-		<GWP_100>66.3</GWP_100>
-		<AP>0.138</AP>		
-		</Material>
+	</Material>
 	<Material material_id="0abb8a8f-83ff-11e6-a24a-2cd444b2e704">
 		<name>Stahlbeton</name>
 		<density>2400.0</density>
 		<thermal_conduc>2.5</thermal_conduc>
 		<heat_capac>1.0</heat_capac>
-		<PE_non_regenerable>1036</PE_non_regenerable>
-		<PE_regenerable>51.9</PE_regenerable>
-		<GWP_100>138</GWP_100>
-		<AP>0.324</AP>
-		<cost>10</cost>
 	</Material>
 	<Material material_id="0aba7911-83ff-11e6-984d-2cd444b2e704">
 		<name>Aluminium</name>
@@ -367,11 +323,6 @@
 		<density>0.0</density>
 		<thermal_conduc>0.168</thermal_conduc>
 		<heat_capac>0.0</heat_capac>
-		<PE_non_regenerable>60</PE_non_regenerable>
-		<PE_regenerable>50</PE_regenerable>
-		<GWP_100>-1.7</GWP_100>
-		<AP>0.00956</AP>
-		<cost>3</cost>
 	</Material>
 	<Material material_id="0aba7921-83ff-11e6-b684-2cd444b2e704">
 		<name>Spalierlatten</name>
@@ -414,11 +365,6 @@
 		<density>0.0</density>
 		<thermal_conduc>0.147</thermal_conduc>
 		<heat_capac>0.0</heat_capac>
-		<PE_non_regenerable>60</PE_non_regenerable>
-		<PE_regenerable>50</PE_regenerable>
-		<GWP_100>-1.7</GWP_100>
-		<AP>0.00956</AP>
-		<cost>3</cost>
 	</Material>
 	<Material material_id="0abb6388-83ff-11e6-b8c2-2cd444b2e704">
 		<name>DieleundLagerholz</name>
