@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" version="0.4">
   <xs:element name="MaterialTemplates" type="MaterialTemplatesType"/>
   <xs:complexType name="MaterialType">
-	<xs:attribute type="xs:string" name="material_id"/>
+    <xs:attribute type="xs:string" name="material_id"/>
     <xs:sequence>
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:float" name="density"/>
@@ -12,6 +12,15 @@
       <xs:element minOccurs="0" type="xs:float" name="ir_emissivity"/>
       <xs:element minOccurs="0" type="xs:float" name="PE_non_regenerable"/>
       <xs:element minOccurs="0" type="xs:float" name="PE_regenerable"/>
+      <xs:element minOccurs="0" type="xs:float" name="secondary_fuels"/>
+      <xs:element minOccurs="0" type="xs:float" name="water_use"/>
+      <xs:element minOccurs="0" type="xs:float" name="ore_dressing_residues"/>
+      <xs:element minOccurs="0" type="xs:float" name="industrial_waste"/>
+      <xs:element minOccurs="0" type="xs:float" name="hazardous_wastes"/>
+      <xs:element minOccurs="0" type="xs:float" name="ADP"/>
+      <xs:element minOccurs="0" type="xs:float" name="EP"/>
+      <xs:element minOccurs="0" type="xs:float" name="ODP"/>
+      <xs:element minOccurs="0" type="xs:float" name="POCP"/>
       <xs:element minOccurs="0" type="xs:float" name="GWP_100"/>
       <xs:element minOccurs="0" type="xs:float" name="AP"/>
       <xs:element minOccurs="0" type="xs:float" name="cost"/>

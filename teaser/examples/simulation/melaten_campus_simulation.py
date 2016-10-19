@@ -63,10 +63,10 @@ def main():
 
     starttime = time.time()
     #Adjust this path to your TEASER teaser Examples path or whatever you want
-    this_path = "D:/GIT/TEASER/teaser/Examples"
+    this_path = "C:/Users/Dude/Documents/UNI/Masterarbeit/TEASER/teaser/examples"
     #path of the buildings xmls
     input_path = os.path.join(this_path,
-                              'ExampleInputFiles',
+                              'examplefiles',
                               'MelatenXML')
     #path where the export is stored
     output_path = os.path.join(os.path.dirname(this_path),
@@ -94,7 +94,7 @@ def main():
     stored, in addition we need to define the path where the exported models
     are"""
 
-    outputDir = "D:/TestCampusSimulation"
+    outputDir = "C:/Users/Dude/Documents/UNI/Masterarbeit/TestCampusSimulation"
     packageDir = output_path + "/Reference" + "/Project"
 
     """

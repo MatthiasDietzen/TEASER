@@ -75,7 +75,7 @@ def main():
                          construction_type="heavy")
 
     #path where the export is stored
-    output_path = os.path.join('D:\Temp',
+    output_path = os.path.join('C:/Users/Dude/Documents/UNI/Masterarbeit/TEASER/teaser/',
                                'OutputData')
 
     print(os.path.join(output_path, 'OneBuildingSim'))
