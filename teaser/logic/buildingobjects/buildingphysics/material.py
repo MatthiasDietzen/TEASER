@@ -42,19 +42,54 @@ class Material(object):
     transmittance : float
         Coefficient of transmittanve of material
         
-    PE_non_regenerable : float
+    PE_non_regenerable (input) : float
         used non regenerable primary energy input to built the material in MJ/kg
         
-    PE_regenerable : float
+    PE_regenerable (input) : float
         used regenerable primary energy input to built the material in MJ/kg
-    
-    GWP_100 : float
-        global warming potential (greenhouse potential) emitted by the Material
-        over his whole lifecyle in kg CO2-Äqv./kg of Material
         
-    AP : float
+    secondary_fuels (input) : float
+        used secondary fuels to built the material in MJ/kg
+    
+    water_use (input) : float
+        used water in the manufacturing process of the material in kg(Water)/kg
+        
+    ore_dressing_residues (output) : float
+        residues of ore emitted by the manufacturing process of the material
+        in kg(ore)/kg
+    
+    industrial_waste (output) : float
+        industrial waste emitted by the manufacturing process of the material
+        in kg(waste)/kg
+    
+   hazardous_wastes (output) : float
+       hazardous waste emitted by the manufacturing process of the material
+        in kg(waste)/kg
+        
+    ADP (input) : float
+        abiotic depletion potential used in the manufacturing process of the
+        material in kg (Sb-eqv.)/ kg
+        
+    EP (output) : float
+        euthropication potential emitted by the manufacturing process of the 
+        material in kg(R11-eqv)/kg
+        
+    ODP (output) : float
+        ozone depletion potential emitted by the manufacturing process of the 
+        material in kg(ethene)/kg
+    
+    POCP (output) : float
+        photochemical ozone creation potential emitted by the manufacturing 
+        process of the material in
+    
+    GWP_100 (output) : float
+        global warming potential (greenhouse potential) emitted by the Material
+        over his whole lifecyle in kg (CO2-Äqv.)/kg
+        
+        
+    AP (output) : float
         acidification potential caused by the Material
-        over his whole lifecyle in kg SO2-Äqv./kg of Material
+        over his whole lifecyle in kg (SO2-eqv.)/kg
     
     cost : float
         material price in Euro/kg    
@@ -84,6 +119,15 @@ class Material(object):
         self._transmittance = 0.0
         self._PE_non_regenerable = 0.0
         self._PE_regenerable = 0.0
+        self._secondary_fuels = 0.0
+        self._ir_emissivity = 0.9
+        self._transmittance = 0.0
+        self._PE_non_regenerable = 0.0
+        self._PE_regenerable = 0.0
+        self._secondary_fuels = 0.0
+        self._GWP_100 = 0.0
+        self._AP = 0.0
+        self._cost = 0.0
         self._GWP_100 = 0.0
         self._AP = 0.0
         self._cost = 0.0
@@ -318,6 +362,170 @@ class Material(object):
                 self._PE_regenerable = value
             except:
                 raise ValueError("Can't convert PE_regenerable to float")
+                
+
+    @property
+    def secondary_fuels(self):
+        return self._secondary_fuels
+        
+    @secondary_fuels.setter
+    def secondary_fuels(self, value):
+
+        if isinstance(value, float):
+            self._secondary_fuels = value
+        elif value is None:
+            self._secondary_fuels = value
+        else:
+            try:
+                value = float(value)
+                self._secondary_fuels = value
+            except:
+                raise ValueError("Can't convert secondary_fuels to float")
+
+    @property
+    def water_use(self):
+        return self._water_use
+
+    @water_use.setter
+    def water_use(self, value):
+
+        if isinstance(value, float):
+            self._water_use = value
+        elif value is None:
+            self._water_use = value
+        else:
+            try:
+                value = float(value)
+                self._water_use = value
+            except:
+                raise ValueError("Can't convert water_use to float")
+
+    @property
+    def ore_dressing_residues(self):
+        return self._ore_dressing_residues
+
+    @ore_dressing_residues.setter
+    def ore_dressing_residues(self, value):
+
+        if isinstance(value, float):
+            self._ore_dressing_residues = value
+        elif value is None:
+            self._ore_dressing_residues = value
+        else:
+            try:
+                value = float(value)
+                self._ore_dressing_residues = value
+            except:
+                raise ValueError("Can't convert ore_dressing_residues to float")
+                
+    @property
+    def industrial_waste(self):
+        return self._industrial_waste
+
+    @industrial_waste.setter
+    def industrial_waste(self, value):
+
+        if isinstance(value, float):
+            self._industrial_waste = value
+        elif value is None:
+            self._industrial_waste = value
+        else:
+            try:
+                value = float(value)
+                self._industrial_waste = value
+            except:
+                raise ValueError("Can't industrial_waste cost to float")
+                
+    @property
+    def hazardous_wastes(self):
+        return self._hazardous_wastes
+
+    @hazardous_wastes.setter
+    def hazardous_wastes(self, value):
+
+        if isinstance(value, float):
+            self._hazardous_wastes = value
+        elif value is None:
+            self._hazardous_wastes = value
+        else:
+            try:
+                value = float(value)
+                self._hazardous_wastes = value
+            except:
+                raise ValueError("Can't convert hazardous_wastes to float")
+
+    @property
+    def ADP(self):
+        return self._ADP
+        
+    @ADP.setter
+    def ADP(self, value):
+
+        if isinstance(value, float):
+            self._ADP = value
+        elif value is None:
+            self._ADP = value
+        else:
+            try:
+                value = float(value)
+                self._ADP = value
+            except:
+                raise ValueError("Can't convert ADP to float")
+                
+
+    @property
+    def EP(self):
+        return self._EP
+        
+    @EP.setter
+    def EP(self, value):
+
+        if isinstance(value, float):
+            self._EP = value
+        elif value is None:
+            self._EP = value
+        else:
+            try:
+                value = float(value)
+                self._EP = value
+            except:
+                raise ValueError("Can't convert EP to float")
+
+    @property
+    def ODP(self):
+        return self._ODP
+
+    @ODP.setter
+    def ODP(self, value):
+
+        if isinstance(value, float):
+            self._ODP = value
+        elif value is None:
+            self._ODP = value
+        else:
+            try:
+                value = float(value)
+                self._ODP = value
+            except:
+                raise ValueError("Can't convert ODP to float")
+
+    @property
+    def POCP(self):
+        return self._POCP
+
+    @POCP.setter
+    def POCP(self, value):
+
+        if isinstance(value, float):
+            self._POCP = value
+        elif value is None:
+            self._POCP = value
+        else:
+            try:
+                value = float(value)
+                self._POCP = value
+            except:
+                raise ValueError("Can't convert POCP to float")
 
     @property
     def GWP_100(self):
