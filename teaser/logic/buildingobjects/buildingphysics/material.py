@@ -120,7 +120,7 @@ class Material(object):
         self._PE_non_regenerable = 0.0
         self._PE_regenerable = 0.0
         self._secondary_fuels = 0.0
-        self._water_use = 0.9
+        self._water_use = 0.0
         self._ore_dressing_residues = 0.0
         self._industrial_waste = 0.0
         self._hazardous_wastes = 0.0
@@ -580,3 +580,8 @@ class Material(object):
                 self._cost = value
             except:
                 raise ValueError("Can't convert cost to float")
+                
+                
+if __name__ == '__main__':
+    r = Material.load_material_template(EPS035, data_class)
+    print("That's it! :)")

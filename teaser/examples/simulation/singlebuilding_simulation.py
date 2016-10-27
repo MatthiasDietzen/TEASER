@@ -73,10 +73,12 @@ def main():
                          window_layout=1,
                          with_ahu=True,
                          construction_type="heavy")
+    
+    prj.buildings[-1].retrofit_building(2015)
 
     #path where the export is stored
-    output_path = os.path.join('C:/Users/Dude/Documents/UNI/Masterarbeit/TEASER/teaser/',
-                               'OutputData')
+    output_path = os.path.join('C:/Users/Dude/Documents/UNI/Masterarbeit/',
+                               'OutputData2')
 
     print(os.path.join(output_path, 'OneBuildingSim'))
     prj.export_aixlib(building_model="MultizoneEquipped",
@@ -108,7 +110,7 @@ def main():
     for bld in prj.buildings:
         #this is necessary for the correct names in the simulation script
         name = "Project." + bld.name + "." + bld.name
-        s = si.Simulator(name, "dymola", outputDir, packageDir)
+        s = si.Simulator(name, "OMEdit", outputDir, packageDir)
         li.append(s)
 
     po = Pool(processes=3)
