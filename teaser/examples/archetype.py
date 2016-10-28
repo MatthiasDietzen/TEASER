@@ -6,6 +6,8 @@ that building and to export that building to internal XML and a Modelica record
 """
 import teaser.data.bindings.v_0_3_9
 
+save_path = "C:/Users/Dude/Documents/UNI/Masterarbeit/TEASER/teaser/OutputData/Dymola"
+
 def example_type_building():
     """"First thing we need to do is to import our Project API module"""
 
@@ -70,18 +72,18 @@ def example_type_building():
                       zone_model="ThermalZoneEquipped",
                       corG=True,
                       internal_id=None,
-                      path=None)
+                      path=save_path)
 
     '''
     For OpenModelica you need to exclude the centralAHU (because it is using
     state machines). Therefore use the building_model "Multizone"
     '''
 
-    #prj.export_aixlib(building_model="Multizone",
-    #                  zone_model="ThermalZoneEquipped",
-    #                  corG=True,
-    #                  internal_id=None,
-    #                  path=None)
+#    prj.export_aixlib(building_model="Multizone",
+#                      zone_model="ThermalZoneEquipped",
+#                      corG=True,
+#                      internal_id=None,
+#                      path=save_path)
 
 
     '''Or we use Annex60 method (e.g with four elements). Which exports one
@@ -108,18 +110,30 @@ def example_type_building():
                       zone_model="ThermalZoneEquipped",
                       corG=True,
                       internal_id=None,
-                      path=None)
+                      path=save_path)
+    
+    '''
+    For OpenModelica you need to exclude the centralAHU (because it is using
+    state machines). Therefore use the building_model "Multizone"
+    '''
+
+#    prj.export_aixlib(building_model="Multizone",
+#                      zone_model="ThermalZoneEquipped",
+#                      corG=True,
+#                      internal_id=None,
+#                      path=save_path)
+    
 
     prj.save_project("Retrofit_Building",
-                     path=None)
+                     path=save_path)
 
     '''Save the human readable output txt'''
-    prj.export_parameters_txt(path=None)
+    prj.export_parameters_txt(path=save_path)
 
     '''
     Save the human readable output txt
     '''
-    prj.save_citygml(path=None)
+    prj.save_citygml(path=save_path)
 
 
 if __name__ == '__main__':

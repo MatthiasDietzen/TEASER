@@ -246,4 +246,8 @@ class Wall(BuildingElement):
                     self.layer[-1].material.thermal_conduc
 
                 self.layer[-1].id = len(self.layer)
-        self.retrofited_materials_and_thickness[self.layer[-1].material.name] = self.layer[-1].thickness
+                
+        self.retrofited_materials_and_thickness \
+        [self.layer[-1].material.material_id] = \
+                                {'name' : self.layer[-1].material.name,
+                                 'thickness' : self.layer[-1].thickness}

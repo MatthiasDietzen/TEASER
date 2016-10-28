@@ -85,8 +85,11 @@ class Window(BuildingElement):
         self.layer = None
         self.load_type_element(year_of_refurbishment,
                                window_type,
-                               self.parent.parent.parent.data)
-        self.retrofited_materials_and_thickness[self.layer[-1].material.name] = self.layer[-1].thickness
+                               self.parent.parent.parent.data)        
+        self.retrofited_materials_and_thickness \
+        [self.layer[-1].material.material_id] = \
+                                {'name' : self.layer[-1].material.name,
+                                 'thickness' : self.layer[-1].thickness}
         
     @property
     def g_value(self):        
