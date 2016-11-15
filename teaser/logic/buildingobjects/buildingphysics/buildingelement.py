@@ -101,6 +101,7 @@ class BuildingElement(object):
         self._construction_type = None
         self._year_of_retrofit = None
         self._retrofited_materials_and_thickness = {}
+        self._retrofited_windows_and_area = {}
         self._year_of_construction = None
         self.building_age_group = [None, None]
 
@@ -467,6 +468,29 @@ class BuildingElement(object):
 #                self._retrofited_materials_and_thickness = value
 #            else:
 #                raise ValueError("Specify retrofited_materials_and_thickness)
+
+    @property        
+    def retrofited_windows_and_area(self):
+        return self._retrofited_windows_and_area
+
+#    @retrofited_windows_and_area.setter
+#    def retrofited_windows_and_area(self, value):
+#
+#        if isinstance(value, int):
+#            pass
+#        elif value is None:
+#            pass
+#        else:
+#            try:
+#                value = int(value)
+#            except:
+#                raise ValueError("Can't convert retrofited_windows_and_area")
+#
+#        if value is not None:
+#            if self.retrofited_windows_and_area is not None:
+#                self._retrofited_windows_and_area = value
+#            else:
+#                raise ValueError("Specify retrofited_windows_and_area)
 
 
     @property

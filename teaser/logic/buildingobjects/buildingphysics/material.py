@@ -72,26 +72,26 @@ class Material(object):
         
     EP (output) : float
         euthropication potential emitted by the manufacturing process of the 
-        material in kg(R11-eqv)/kg
+        material in kg(phosphate-eqv)/kg
         
     ODP (output) : float
         ozone depletion potential emitted by the manufacturing process of the 
-        material in kg(ethene)/kg
+        material in kg(R11eqv)/kg
     
     POCP (output) : float
         photochemical ozone creation potential emitted by the manufacturing 
-        process of the material in
+        process of the material in kg(ethene-eqv)/kg
     
     GWP_100 (output) : float
         global warming potential (greenhouse potential) emitted by the Material
-        over his whole lifecyle in kg (CO2-Äqv.)/kg
+        over his whole lifecyle in kg(CO2-eqv.)/kg
         
         
     AP (output) : float
         acidification potential caused by the Material
-        over his whole lifecyle in kg (SO2-eqv.)/kg
+        over his whole lifecyle in kg(SO2-eqv.)/kg
     
-    cost : float
+    costs : float
         material price in Euro/kg    
         
     material_id : str(uuid)
@@ -130,7 +130,7 @@ class Material(object):
         self._POCP = 0.0
         self._GWP_100 = 0.0
         self._AP = 0.0
-        self._cost = 0.0
+        self._costs = 0.0
 
         self.material_id = str(uuid.uuid1())
 
@@ -584,24 +584,19 @@ class Material(object):
                 raise ValueError("Can't convert AP to float")
                 
     @property
-    def cost(self):
-        return self._cost
+    def costs(self):
+        return self._costs
 
-    @cost.setter
-    def cost(self, value):
+    @costs.setter
+    def costs(self, value):
 
         if isinstance(value, float):
-            self._cost = value
+            self._costs = value
         elif value is None:
-            self._cost = value
+            self._costs = value
         else:
             try:
                 value = float(value)
-                self._cost = value
+                self._costs = value
             except:
-                raise ValueError("Can't convert cost to float")
-                
-                
-if __name__ == '__main__':
-    r = Material.load_material_template(EPS035, data_class)
-    print("That's it! :)")
+                raise ValueError("Can't convert costs to float")
