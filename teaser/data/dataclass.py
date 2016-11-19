@@ -43,8 +43,9 @@ class DataClass(object):
         '''
 
         self.element_bind = None
-        self.material_bind = None
         self.conditions_bind = None
+        self.material_bind = None
+        self.energy_carrier_bind = None
 
 
         self.path_tb = utilitis.get_full_path(
@@ -53,10 +54,13 @@ class DataClass(object):
             "data/input/inputdata/UseConditions.xml")
         self.path_mat = utilitis.get_full_path(
             "data/input/inputdata/MaterialTemplates.xml")
+        self.path_enc = utilitis.get_full_path(
+            "data/input/inputdata/EnergyCarrierTemplates.xml")
 
         self.load_tb_binding()
         self.load_uc_binding()
         self.load_mat_binding()
+        self.load_enc_binding
 
     def load_tb_binding(self):
         """loads specified type building XML files into bindings
@@ -143,3 +147,30 @@ class DataClass(object):
             import teaser.data.bindings.v_0_4.material_bind as mat_bind
 
         self.material_bind = mat_bind.CreateFromDocument(__xml_file_mat.read())
+        
+    def load_enc_binding(self):
+        """loads specified energy_carrier XML files into bindings
+
+        """
+        try:
+            __xml_file_enc = open(self.path_enc, 'r+')
+            version_parse = element_tree.parse(self.path_tb)
+        except:
+            __xml_file_enc = open(self.path_enc, 'w')
+            version_parse = False
+
+        if version_parse is False:
+            import teaser.data.bindings.v_0_4.energy_carrier_bind as enc_bind
+            self.element_bind = enc_bind.energy_carrierTemplates()
+        if bool(version_parse.getroot().attrib) is False:
+            warnings.warn(
+                "You are using an old version of energy_carrier data base XML file")
+            import teaser.data.bindings.v_0_3_9.energy_carrier_bind as enc_bind
+        elif version_parse.getroot().attrib['version'] == "0.3.9":
+            warnings.warn(
+                "You are using an old version of energy_carrier data base XML file")
+            import teaser.data.bindings.v_0_3_9.energy_carrier_bind as enc_bind
+        elif version_parse.getroot().attrib['version'] == "0.4":
+            import teaser.data.bindings.v_0_4.energy_carrier_bind as enc_bind
+
+        self.energy_carrier_bind = enc_bind.CreateFromDocument(__xml_file_enc.read())
