@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<ns1:EnergyCarrierTemplates version="0.4" xmlns:ns1="http://teaser.energy_carrier">
+	<ns1:EnergyCarrier energy_carrier_id="5b853868-855d-11e6-9874-2cd444b2e704">
+		<ns1:name>Gas</ns1:name>
+		<ns1:density>22.9</ns1:density>
+		<ns1:PE_non_regenerable>80.22347984692838</ns1:PE_non_regenerable>
+		<ns1:PE_regenerable>0.41637341125786553</ns1:PE_regenerable>
+		<ns1:secondary_fuels>0.0</ns1:secondary_fuels>
+		<ns1:water_use>3.9858079558538777</ns1:water_use>
+		<ns1:ore_dressing_residues>2.23948484051276</ns1:ore_dressing_residues>
+		<ns1:industrial_waste>0.0005853440810382401</ns1:industrial_waste>
+		<ns1:hazardous_wastes>0.007303810906761179</ns1:hazardous_wastes>
+		<ns1:ADP>0.03720759215311511</ns1:ADP>
+		<ns1:EP>0.000586390654932297</ns1:EP>
+		<ns1:ODP>7.510785326304323e-08</ns1:ODP>
+		<ns1:POCP>0.015236941923197337</ns1:POCP>
+		<ns1:GWP_100>2.6816236819748345</ns1:GWP_100>
+		<ns1:AP>0.005773080886017554</ns1:AP>
+	</ns1:EnergyCarrier>
+	<ns1:EnergyCarrier energy_carrier_id="0abaa039-83ff-11e6-b385-2cd444b2e704">
+		<ns1:name>Holz</ns1:name>
+		<ns1:density>1700.0</ns1:density>
+		<ns1:PE_non_regenerable>6.7972913339406</ns1:PE_non_regenerable>
+		<ns1:PE_regenerable>0.278836747854052</ns1:PE_regenerable>
+		<ns1:secondary_fuels>0.000767056125321867</ns1:secondary_fuels>
+		<ns1:water_use>275.229508303922</ns1:water_use>
+		<ns1:ore_dressing_residues>0.955281520412175</ns1:ore_dressing_residues>
+		<ns1:industrial_waste>0.0</ns1:industrial_waste>
+		<ns1:hazardous_wastes>0.000181879458990832</ns1:hazardous_wastes>
+		<ns1:ADP>0.00305023016395943</ns1:ADP>
+		<ns1:EP>9.44540102075726e-05</ns1:EP>
+		<ns1:ODP>5.02815480019374e-10</ns1:ODP>
+		<ns1:POCP>0.000146244104774674</ns1:POCP>
+		<ns1:GWP_100>0.454011961179767</ns1:GWP_100>
+		<ns1:AP>0.00101962300797076</ns1:AP>
+	</ns1:EnergyCarrier>
+	<ns1:EnergyCarrier energy_carrier_id="0abbb1a0-83ff-11e6-9986-2cd444b2e704">
+		<ns1:name>ÖL</ns1:name>
+		<ns1:density>0.0</ns1:density>
+		<ns1:PE_non_regenerable>21.48386583452425</ns1:PE_non_regenerable>
+		<ns1:PE_regenerable>0.636725657480515</ns1:PE_regenerable>
+		<ns1:secondary_fuels>0.0030443778730146398</ns1:secondary_fuels>
+		<ns1:water_use>601.580147594285</ns1:water_use>
+		<ns1:ore_dressing_residues>2.692806301410635</ns1:ore_dressing_residues>
+		<ns1:industrial_waste>0.0</ns1:industrial_waste>
+		<ns1:hazardous_wastes>0.00038489192116752003</ns1:hazardous_wastes>
+		<ns1:ADP>0.00987473938879055</ns1:ADP>
+		<ns1:EP>0.0013578020708351801</ns1:EP>
+		<ns1:ODP>1.165801109077545e-09</ns1:ODP>
+		<ns1:POCP>0.000614076675361515</ns1:POCP>
+		<ns1:GWP_100>1.710472261901605</ns1:GWP_100>
+		<ns1:AP>0.0087769547333829</ns1:AP>
+	</ns1:EnergyCarrier>
+</ns1:EnergyCarrierTemplates>

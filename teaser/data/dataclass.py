@@ -60,7 +60,7 @@ class DataClass(object):
         self.load_tb_binding()
         self.load_uc_binding()
         self.load_mat_binding()
-        self.load_enc_binding
+        self.load_enc_binding()
 
     def load_tb_binding(self):
         """loads specified type building XML files into bindings
@@ -161,7 +161,7 @@ class DataClass(object):
 
         if version_parse is False:
             import teaser.data.bindings.v_0_4.energy_carrier_bind as enc_bind
-            self.element_bind = enc_bind.energy_carrierTemplates()
+            self.element_bind = enc_bind.EnergyCarrierTemplates()
         if bool(version_parse.getroot().attrib) is False:
             warnings.warn(
                 "You are using an old version of energy_carrier data base XML file")

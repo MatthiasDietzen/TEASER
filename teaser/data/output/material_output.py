@@ -66,7 +66,7 @@ def save_material(material, data_class):
         mat_pyxb.POCP = material.POCP 
         mat_pyxb.GWP_100 = material.GWP_100
         mat_pyxb.AP = material.AP
-        mat_pyxb.cost = material.cost
+        mat_pyxb.costs = material.cost
 
         mat_binding.Material.append(mat_pyxb)
         out_file = open(utilitis.get_full_path(data_class.path_mat), "w")

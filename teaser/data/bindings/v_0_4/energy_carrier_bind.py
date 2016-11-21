@@ -1,8 +1,8 @@
 # .\energy_carrier_bind.py
 # -*- coding: utf-8 -*-
-# PyXB bindings for NM:9247e0872e1b5a8398833507e3048b1afe72a618
-# Generated 2016-11-19 18:10:49.754119 by PyXB version 1.2.4 using Python 3.5.2.final.0
-# Namespace http://teaser.EnergyCarrier
+# PyXB bindings for NM:2940c0da6b26e933e9f4804779b84d1476bba9da
+# Generated 2016-11-21 20:52:19.435579 by PyXB version 1.2.4 using Python 3.5.2.final.0
+# Namespace http://teaser.energy_carrier
 
 from __future__ import unicode_literals
 import pyxb
@@ -15,7 +15,7 @@ import sys
 import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
-_GenerationUID = pyxb.utils.utility.UniqueIdentifier('urn:uuid:1e79508c-ae7b-11e6-a4d7-54ee7579a8e4')
+_GenerationUID = pyxb.utils.utility.UniqueIdentifier('urn:uuid:02cceadc-b024-11e6-b7d2-54ee7579a8e4')
 
 # Version of PyXB used to generate the bindings
 _PyXBVersion = '1.2.4'
@@ -27,7 +27,7 @@ if pyxb.__version__ != _PyXBVersion:
 import pyxb.binding.datatypes
 
 # NOTE: All namespace declarations are reserved within the binding
-Namespace = pyxb.namespace.NamespaceForURI('http://teaser.EnergyCarrier', create_if_missing=True)
+Namespace = pyxb.namespace.NamespaceForURI('http://teaser.energy_carrier', create_if_missing=True)
 Namespace.configureCategories(['typeBinding', 'elementBinding'])
 
 def CreateFromDocument (xml_text, default_namespace=None, location_base=None):
@@ -73,9 +73,9 @@ def CreateFromDOM (node, default_namespace=None):
     return pyxb.binding.basis.element.AnyCreateFromDOM(node, default_namespace)
 
 
-# Complex type {http://teaser.EnergyCarrier}EnergyCarrierType with content type ELEMENT_ONLY
+# Complex type {http://teaser.energy_carrier}EnergyCarrierType with content type ELEMENT_ONLY
 class EnergyCarrierType (pyxb.binding.basis.complexTypeDefinition):
-    """Complex type {http://teaser.EnergyCarrier}EnergyCarrierType with content type ELEMENT_ONLY"""
+    """Complex type {http://teaser.energy_carrier}EnergyCarrierType with content type ELEMENT_ONLY"""
     _TypeDefinition = None
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
@@ -85,124 +85,124 @@ class EnergyCarrierType (pyxb.binding.basis.complexTypeDefinition):
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
-    # Element {http://teaser.EnergyCarrier}name uses Python identifier name
-    __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarriername', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 8, 6), )
+    # Element {http://teaser.energy_carrier}name uses Python identifier name
+    __name = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'name'), 'name', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carriername', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 8, 6), )
 
     
     name = property(__name.value, __name.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}density uses Python identifier density
-    __density = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'density'), 'density', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierdensity', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 9, 6), )
+    # Element {http://teaser.energy_carrier}density uses Python identifier density
+    __density = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'density'), 'density', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierdensity', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 9, 6), )
 
     
     density = property(__density.value, __density.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}PE_non_regenerable uses Python identifier PE_non_regenerable
-    __PE_non_regenerable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'PE_non_regenerable'), 'PE_non_regenerable', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierPE_non_regenerable', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 10, 6), )
+    # Element {http://teaser.energy_carrier}PE_non_regenerable uses Python identifier PE_non_regenerable
+    __PE_non_regenerable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'PE_non_regenerable'), 'PE_non_regenerable', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierPE_non_regenerable', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 10, 6), )
 
     
     PE_non_regenerable = property(__PE_non_regenerable.value, __PE_non_regenerable.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}PE_regenerable uses Python identifier PE_regenerable
-    __PE_regenerable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'PE_regenerable'), 'PE_regenerable', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierPE_regenerable', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 11, 6), )
+    # Element {http://teaser.energy_carrier}PE_regenerable uses Python identifier PE_regenerable
+    __PE_regenerable = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'PE_regenerable'), 'PE_regenerable', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierPE_regenerable', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 11, 6), )
 
     
     PE_regenerable = property(__PE_regenerable.value, __PE_regenerable.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}secondary_fuels uses Python identifier secondary_fuels
-    __secondary_fuels = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'secondary_fuels'), 'secondary_fuels', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarriersecondary_fuels', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 12, 6), )
+    # Element {http://teaser.energy_carrier}secondary_fuels uses Python identifier secondary_fuels
+    __secondary_fuels = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'secondary_fuels'), 'secondary_fuels', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carriersecondary_fuels', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 12, 6), )
 
     
     secondary_fuels = property(__secondary_fuels.value, __secondary_fuels.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}water_use uses Python identifier water_use
-    __water_use = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'water_use'), 'water_use', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierwater_use', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 13, 6), )
+    # Element {http://teaser.energy_carrier}water_use uses Python identifier water_use
+    __water_use = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'water_use'), 'water_use', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierwater_use', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 13, 6), )
 
     
     water_use = property(__water_use.value, __water_use.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}ore_dressing_residues uses Python identifier ore_dressing_residues
-    __ore_dressing_residues = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ore_dressing_residues'), 'ore_dressing_residues', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierore_dressing_residues', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 14, 6), )
+    # Element {http://teaser.energy_carrier}ore_dressing_residues uses Python identifier ore_dressing_residues
+    __ore_dressing_residues = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ore_dressing_residues'), 'ore_dressing_residues', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierore_dressing_residues', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 14, 6), )
 
     
     ore_dressing_residues = property(__ore_dressing_residues.value, __ore_dressing_residues.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}industrial_waste uses Python identifier industrial_waste
-    __industrial_waste = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'industrial_waste'), 'industrial_waste', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierindustrial_waste', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 15, 6), )
+    # Element {http://teaser.energy_carrier}industrial_waste uses Python identifier industrial_waste
+    __industrial_waste = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'industrial_waste'), 'industrial_waste', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierindustrial_waste', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 15, 6), )
 
     
     industrial_waste = property(__industrial_waste.value, __industrial_waste.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}hazardous_wastes uses Python identifier hazardous_wastes
-    __hazardous_wastes = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'hazardous_wastes'), 'hazardous_wastes', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierhazardous_wastes', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 16, 6), )
+    # Element {http://teaser.energy_carrier}hazardous_wastes uses Python identifier hazardous_wastes
+    __hazardous_wastes = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'hazardous_wastes'), 'hazardous_wastes', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierhazardous_wastes', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 16, 6), )
 
     
     hazardous_wastes = property(__hazardous_wastes.value, __hazardous_wastes.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}ADP uses Python identifier ADP
-    __ADP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ADP'), 'ADP', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierADP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 17, 6), )
+    # Element {http://teaser.energy_carrier}ADP uses Python identifier ADP
+    __ADP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ADP'), 'ADP', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierADP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 17, 6), )
 
     
     ADP = property(__ADP.value, __ADP.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}EP uses Python identifier EP
-    __EP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'EP'), 'EP', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierEP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 18, 6), )
+    # Element {http://teaser.energy_carrier}EP uses Python identifier EP
+    __EP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'EP'), 'EP', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierEP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 18, 6), )
 
     
     EP = property(__EP.value, __EP.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}ODP uses Python identifier ODP
-    __ODP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ODP'), 'ODP', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierODP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 19, 6), )
+    # Element {http://teaser.energy_carrier}ODP uses Python identifier ODP
+    __ODP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'ODP'), 'ODP', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierODP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 19, 6), )
 
     
     ODP = property(__ODP.value, __ODP.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}POCP uses Python identifier POCP
-    __POCP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'POCP'), 'POCP', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierPOCP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 20, 6), )
+    # Element {http://teaser.energy_carrier}POCP uses Python identifier POCP
+    __POCP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'POCP'), 'POCP', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierPOCP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 20, 6), )
 
     
     POCP = property(__POCP.value, __POCP.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}GWP_100 uses Python identifier GWP_100
-    __GWP_100 = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'GWP_100'), 'GWP_100', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierGWP_100', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 21, 6), )
+    # Element {http://teaser.energy_carrier}GWP_100 uses Python identifier GWP_100
+    __GWP_100 = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'GWP_100'), 'GWP_100', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierGWP_100', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 21, 6), )
 
     
     GWP_100 = property(__GWP_100.value, __GWP_100.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}AP uses Python identifier AP
-    __AP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AP'), 'AP', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarrierAP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 22, 6), )
+    # Element {http://teaser.energy_carrier}AP uses Python identifier AP
+    __AP = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'AP'), 'AP', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carrierAP', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 22, 6), )
 
     
     AP = property(__AP.value, __AP.set, None, None)
 
     
-    # Element {http://teaser.EnergyCarrier}costs uses Python identifier costs
-    __costs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'costs'), 'costs', '__httpteaser_EnergyCarrier_EnergyCarrierType_httpteaser_EnergyCarriercosts', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 23, 6), )
+    # Element {http://teaser.energy_carrier}costs uses Python identifier costs
+    __costs = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'costs'), 'costs', '__httpteaser_energy_carrier_EnergyCarrierType_httpteaser_energy_carriercosts', False, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 23, 6), )
 
     
     costs = property(__costs.value, __costs.set, None, None)
 
     
-    # Attribute EnergyCarrier_id uses Python identifier EnergyCarrier_id
-    __EnergyCarrier_id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'EnergyCarrier_id'), 'EnergyCarrier_id', '__httpteaser_EnergyCarrier_EnergyCarrierType_EnergyCarrier_id', pyxb.binding.datatypes.string)
-    __EnergyCarrier_id._DeclarationLocation = pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 6, 4)
-    __EnergyCarrier_id._UseLocation = pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 6, 4)
+    # Attribute energy_carrier_id uses Python identifier energy_carrier_id
+    __energy_carrier_id = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'energy_carrier_id'), 'energy_carrier_id', '__httpteaser_energy_carrier_EnergyCarrierType_energy_carrier_id', pyxb.binding.datatypes.string)
+    __energy_carrier_id._DeclarationLocation = pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 6, 4)
+    __energy_carrier_id._UseLocation = pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 6, 4)
     
-    EnergyCarrier_id = property(__EnergyCarrier_id.value, __EnergyCarrier_id.set, None, None)
+    energy_carrier_id = property(__energy_carrier_id.value, __energy_carrier_id.set, None, None)
 
     _ElementMap.update({
         __name.name() : __name,
@@ -223,14 +223,14 @@ class EnergyCarrierType (pyxb.binding.basis.complexTypeDefinition):
         __costs.name() : __costs
     })
     _AttributeMap.update({
-        __EnergyCarrier_id.name() : __EnergyCarrier_id
+        __energy_carrier_id.name() : __energy_carrier_id
     })
 Namespace.addCategoryObject('typeBinding', 'EnergyCarrierType', EnergyCarrierType)
 
 
-# Complex type {http://teaser.EnergyCarrier}EnergyCarrierTemplatesType with content type ELEMENT_ONLY
+# Complex type {http://teaser.energy_carrier}EnergyCarrierTemplatesType with content type ELEMENT_ONLY
 class EnergyCarrierTemplatesType (pyxb.binding.basis.complexTypeDefinition):
-    """Complex type {http://teaser.EnergyCarrier}EnergyCarrierTemplatesType with content type ELEMENT_ONLY"""
+    """Complex type {http://teaser.energy_carrier}EnergyCarrierTemplatesType with content type ELEMENT_ONLY"""
     _TypeDefinition = None
     _ContentTypeTag = pyxb.binding.basis.complexTypeDefinition._CT_ELEMENT_ONLY
     _Abstract = False
@@ -240,15 +240,15 @@ class EnergyCarrierTemplatesType (pyxb.binding.basis.complexTypeDefinition):
     _AttributeMap = {}
     # Base type is pyxb.binding.datatypes.anyType
     
-    # Element {http://teaser.EnergyCarrier}EnergyCarrier uses Python identifier EnergyCarrier
-    __EnergyCarrier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'EnergyCarrier'), 'EnergyCarrier', '__httpteaser_EnergyCarrier_EnergyCarrierTemplatesType_httpteaser_EnergyCarrierEnergyCarrier', True, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 29, 6), )
+    # Element {http://teaser.energy_carrier}EnergyCarrier uses Python identifier EnergyCarrier
+    __EnergyCarrier = pyxb.binding.content.ElementDeclaration(pyxb.namespace.ExpandedName(Namespace, 'EnergyCarrier'), 'EnergyCarrier', '__httpteaser_energy_carrier_EnergyCarrierTemplatesType_httpteaser_energy_carrierEnergyCarrier', True, pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 29, 6), )
 
     
     EnergyCarrier = property(__EnergyCarrier.value, __EnergyCarrier.set, None, None)
 
     
     # Attribute version uses Python identifier version
-    __version = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'version'), 'version', '__httpteaser_EnergyCarrier_EnergyCarrierTemplatesType_version', pyxb.binding.datatypes.string)
+    __version = pyxb.binding.content.AttributeUse(pyxb.namespace.ExpandedName(None, 'version'), 'version', '__httpteaser_energy_carrier_EnergyCarrierTemplatesType_version', pyxb.binding.datatypes.string)
     __version._DeclarationLocation = pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 27, 4)
     __version._UseLocation = pyxb.utils.utility.Location('C:\\Users\\Dude\\Documents\\UNI\\Masterarbeit\\pyxb-PyXB-1.2.4\\scripts\\EnergyCarrierTemplates.xsd', 27, 4)
     
