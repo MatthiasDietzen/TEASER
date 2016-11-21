@@ -7,17 +7,13 @@ import uuid
 import teaser.data.input.energy_carrier_input as energy_carrier_input
 import teaser.data.output.energy_carrier_output as energy_carrier_output
 
-class energy_carrier(object):
-    '''This class represents a energy_carrier.
+class EnergyCarrier(object):
+    '''This class represents a EnergyCarrier.
 
-
-    Attributes (each KPI is based on 1kWh of the energy_carrier)
+    Attributes (each KPI is based on 1 kWh of the energy_carrier)
     ----------
     name : str
         Individual name
-        
-    density : float
-        Density of material in kg/kWh
         
     PE_non_regenerable (input) : float
         used non regenerable primary energy input to built the energy_carrier in MJ/kWh
@@ -60,12 +56,12 @@ class energy_carrier(object):
         process of the energy_carrier in kg(ethene-eqv)/kWh
     
     GWP_100 (output) : float
-        global warming potential (greenhouse potential) emitted by the energy_carrier
+        global warming potential (greenhouse potential) emitted by the EnergyCarrier
         over his whole lifecyle in kg(CO2-eqv.)/kWh
         
         
     AP (output) : float
-        acidification potential caused by the energy_carrier
+        acidification potential caused by the EnergyCarrier
         over his whole lifecyle in kg(SO2-eqv.)/kWh
     
     costs : float
@@ -73,18 +69,18 @@ class energy_carrier(object):
         
     energy_carrier_id : str(uuid)
         UUID of energy_carrier, this is used to have similar behaviour like foreign
-        key in SQL data bases for use in TypeBuildingElements and energy_carrier xml
+        key in SQL data bases for use in TypeBuildingElements and EnergyCarrier xml
 
     '''
 
     def __init__(self, parent=None):
-        '''Constructor of energy_carrier.
+        '''Constructor of EnergyCarrier.
 
 
         '''
 
         self._name = ""
-        self._density = None
+        self._density = 0.0
         self._PE_non_regenerable = 0.0
         self._PE_regenerable = 0.0
         self._secondary_fuels = 0.0
@@ -102,20 +98,20 @@ class energy_carrier(object):
 
         self.energy_carrier_id = str(uuid.uuid1())
 
-    def load_energy_carrier_template(self, mat_name, data_class=None):
-        '''energy_carrier loader.
+    def load_energy_carrier_template(self, enc_name, data_class=None):
+        '''EnergyCarrier loader.
 
-        Loads energy_carrier specified in the XML.
+        Loads EnergyCarrier specified in the XML.
 
         Parameters
         ----------
 
-        mat_name : str
-            Code list for energy_carrier
+        enc_name : str
+            Code list for EnergyCarrier
 
         data_class : DataClass()
             DataClass containing the bindings for TypeBuildingElement and
-            energy_carrier (typically this is the data class stored in prj.data,
+            EnergyCarrier (typically this is the data class stored in prj.data,
             but the user can individually change that. Default is
             self.parent.parent.parent.parent.data which is data in project
 
@@ -127,20 +123,20 @@ class energy_carrier(object):
             data_class = data_class
 
         energy_carrier_input.load_energy_carrier(energy_carrier=self,
-                                     mat_name=mat_name,
+                                     enc_name=enc_name,
                                      data_class=data_class)
 
     def save_energy_carrier_template(self, data_class):
-        '''energy_carrier saver.
+        '''EnergyCarrier saver.
 
-        Saves energy_carrier specified in the XML.
+        Saves EnergyCarrier specified in the XML.
 
         Parameters
         ----------
 
         data_class : DataClass()
             DataClass containing the bindings for TypeBuildingElement and
-            energy_carrier (typically this is the data class stored in prj.data,
+            EnergyCarrier (typically this is the data class stored in prj.data,
             but the user can individually change that. Default is
             self.parent.parent.parent.parent.data which is data in project
 
@@ -178,6 +174,33 @@ class energy_carrier(object):
                 self._name = regex.sub('', value)
             except ValueError:
                 print("Can't convert name to string")
+
+    @property
+    def thermal_conduc(self):
+        return self._thermal_conduc
+
+    @thermal_conduc.setter
+    def thermal_conduc(self, value):
+
+        if isinstance(value, float):
+            pass
+        elif value is None:
+            pass
+        else:
+            try:
+                value = float(value)
+            except:
+                raise ValueError("Can't convert thermal conduction to float")
+
+        if value is not None:
+            self._thermal_conduc = float(value)
+            if self.parent is not None:
+                if self.parent.parent is not None:
+                    if self.parent.thickness is not None and\
+                       self.parent.parent.inner_convection is not None and\
+                       self.parent.parent.inner_radiation is not None and\
+                       self.parent.parent.area is not None:
+                        self.parent.parent.calc_ua_value()
 
     @property
     def density(self):
