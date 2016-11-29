@@ -8,28 +8,28 @@ This module contains function to load energy_carrier classes
 
 
 def load_energy_carrier(energy_carrier, enc_name, data_class):
-    '''energy_carrier loader.
+    '''EnergyCarrier loader.
 
-    Loads energy_carrier specified in the XML.
+    Loads EnergyCarrier specified in the XML.
 
     Parameters
     ----------
 
-    energy_carrier : energy_carrier()
-        instance of TEASERS energy_carrier class
+    energy_carrier : EnergyCarrier()
+        instance of TEASERS EnergyCarrier class
 
     enc_name : str
-        Code list for energy_carrier
+        Code list for EnergyCarrier
 
     data_class : DataClass()
         DataClass containing the bindings for TypeBuildingElement and
-        energy_carrier (typically this is the data class stored in prj.data,
+        EnergyCarrier (typically this is the data class stored in prj.data,
         but the user can individually change that.
     '''
 
     binding = data_class.energy_carrier_bind
 
-    for enc in binding.energy_carrier:
+    for enc in binding.EnergyCarrier:
 
         if enc.name == enc_name:
 
@@ -49,32 +49,32 @@ def load_energy_carrier(energy_carrier, enc_name, data_class):
             energy_carrier.POCP = enc.POCP
             energy_carrier.GWP_100 = enc.GWP_100
             energy_carrier.AP = enc.AP
-            energy_carrier.cost = enc.cost
+            energy_carrier.costs = enc.costs
 
 
 def load_energy_carrier_id(energy_carrier, enc_id, data_class):
-    """energy_carrier loader by id.
+    """EnergyCarrier loader by id.
 
-    Loads energy_carrier specified in the XML by given energy_carrier_id.
+    Loads EnergyCarrier specified in the XML by given energy_carrier_id.
 
     Parameters
     ----------
 
-    energy_carrier : energy_carrier()
-        instance of TEASERS energy_carrier class
+    energy_carrier : EnergyCarrier()
+        instance of TEASERS EnergyCarrier class
 
     enc_id : name
         id of energy_carrier from XML
 
     data_class : DataClass()
         DataClass containing the bindings for TypeBuildingElement and
-        energy_carrier (typically this is the data class stored in prj.data,
+        EnergyCarrier (typically this is the data class stored in prj.data,
         but the user can individually change that.
     """
 
     binding = data_class.energy_carrier_bind
 
-    for enc in binding.energy_carrier:
+    for enc in binding.EnergyCarrier:
 
         if enc.energy_carrier_id == enc_id:
 
@@ -95,5 +95,5 @@ def load_energy_carrier_id(energy_carrier, enc_id, data_class):
             energy_carrier.POCP = enc.POCP
             energy_carrier.GWP_100 = enc.GWP_100
             energy_carrier.AP = enc.AP
-            energy_carrier.cost = enc.cost
+            energy_carrier.costs = enc.costs
 

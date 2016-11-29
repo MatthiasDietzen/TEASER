@@ -3,7 +3,7 @@
 
 
 from teaser.logic.buildingobjects.buildingphysics.buildingelement \
-    import BuildingElement
+        import BuildingElement
 from teaser.logic.buildingobjects.buildingphysics.layer import Layer
 from teaser.logic.buildingobjects.buildingphysics.material import Material
 import numpy as np

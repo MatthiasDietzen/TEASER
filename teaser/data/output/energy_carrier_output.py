@@ -11,46 +11,44 @@ import warnings
 import pyxb
 
 def save_energy_carrier(energy_carrier, data_class):
-    """energy_carrier saver.
+    """EnergyCarrier saver.
 
-    Saves energy_carrier specified in the XML.
+    Saves EnergyCarrier specified in the XML.
 
     Parameters
     ----------
-    energy_carrier : energy_carrier()
-        instance of TEASERS energy_carrier class
+    energy_carrier : EnergyCarrier()
+        instance of TEASERS EnergyCarrier class
 
     data_class : DataClass()
         DataClass containing the bindings for TypeBuildingElement and
-        energy_carrier (typically this is the data class stored in prj.data,
+        EnergyCarrier (typically this is the data class stored in prj.data,
         but the user can individually change that.
 
     """
     enc_binding = data_class.energy_carrier_bind
     add_to_xml = True
     enc_binding.version = "0.4"
-    warning_text = ("energy_carrier with same name and same properties already "
+    warning_text = ("EnergyCarrier with same name and same properties already "
                     "exists in XML, consider this energy_carrier or revising your "
                     "properties")
 
     pyxb.utils.domutils.BindingDOMSupport.DeclareNamespace(
         enc_bind.Namespace, 'energy_carriers')
 
-    for check in enc_binding.energy_carrier:
+    for check in enc_binding.EnergyCarrier:
         if check.name == energy_carrier.name and \
-                check.density == energy_carrier.density and \
-                check.thermal_conduc == energy_carrier.thermal_conduc and \
-                check.heat_capac == energy_carrier.heat_capac:
+                check.density == energy_carrier.density:
             warnings.warn(warning_text)
             add_to_xml = False
             break
 
     if add_to_xml is True:
-        enc_pyxb = enc_bind.energy_carrierType()
+        enc_pyxb = enc_bind.EnergyCarrierType()
 
+        enc_pyxb.energy_carrier_id = energy_carrier.energy_carrier_id
         enc_pyxb.name = energy_carrier.name
         enc_pyxb.density = energy_carrier.density
-        enc_pyxb.energy_carrier_id = energy_carrier.energy_carrier_id
         enc_pyxb.PE_non_regenerable = energy_carrier.PE_non_regenerable
         enc_pyxb.PE_regenerable = energy_carrier.PE_regenerable
         enc_pyxb.secondary_fuels = energy_carrier.secondary_fuels
@@ -64,9 +62,9 @@ def save_energy_carrier(energy_carrier, data_class):
         enc_pyxb.POCP = energy_carrier.POCP 
         enc_pyxb.GWP_100 = energy_carrier.GWP_100
         enc_pyxb.AP = energy_carrier.AP
-        enc_pyxb.cost = energy_carrier.cost
+        enc_pyxb.costs = energy_carrier.costs
 
-        enc_binding.energy_carrier.append(enc_pyxb)
+        enc_binding.EnergyCarrier.append(enc_pyxb)
         out_file = open(utilitis.get_full_path(data_class.path_enc), "w")
 
         out_file.write(enc_binding.toDOM().toprettyxml())

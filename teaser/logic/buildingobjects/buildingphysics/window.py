@@ -37,6 +37,8 @@ class Window(BuildingElement):
         self._inner_radiation = 5.0
         self._outer_convection = 20.0
         self._outer_radiation = 5.0
+        
+        
     def calc_equivalent_res(self):
         '''Equivalent resistance VDI 6007
 

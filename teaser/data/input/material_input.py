@@ -51,7 +51,7 @@ def load_material(material, mat_name, data_class):
             material.POCP = mat.POCP
             material.GWP_100 = mat.GWP_100
             material.AP = mat.AP
-            material.cost = mat.cost
+            material.costs = mat.costs
 
 
 def load_material_id(material, mat_id, data_class):
@@ -99,5 +99,5 @@ def load_material_id(material, mat_id, data_class):
             material.POCP = mat.POCP
             material.GWP_100 = mat.GWP_100
             material.AP = mat.AP
-            material.cost = mat.cost
+            material.costs = mat.costs
 

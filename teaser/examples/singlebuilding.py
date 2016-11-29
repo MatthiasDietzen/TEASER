@@ -52,6 +52,7 @@ def example_create_building():
     tz.area = 140.0
     tz.volume = tz.area * bldg.number_of_floors * bldg.height_of_floors
     tz.infiltration_rate = 0.5
+    print(tz.parent.street_name)
 
     '''Instantiate UseConditions18599 class with thermal zone as parent,
     and load the use conditions for the usage 'Living' '''
