@@ -249,10 +249,10 @@ class Wall(BuildingElement):
                 
 
                 
-            self.retrofited_materials_and_thickness \
+            self.retrofit_dict \
             [type(self).__name__] = {self.layer[-1].material.material_id:\
                                     {'name' : self.layer[-1].material.name,
                                      'thickness' : self.layer[-1].thickness}}
-            self.retrofited_materials_and_thickness \
+            self.retrofit_dict \
             [type(self).__name__][self.layer[-1].material.material_id].update(self.layer[-1].material.__dict__)
         
