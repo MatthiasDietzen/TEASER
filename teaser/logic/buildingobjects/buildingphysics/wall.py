@@ -247,9 +247,12 @@ class Wall(BuildingElement):
 
                 self.layer[-1].id = len(self.layer)
                 
-        self.retrofited_materials_and_thickness \
-        [self.layer[-1].material.material_id] = \
-                                {'name' : self.layer[-1].material.name,
-                                 'thickness' : self.layer[-1].thickness}
-        self.retrofited_materials_and_thickness \
-        [self.layer[-1].material.material_id].update(self.layer[-1].material.__dict__)
+
+                
+            self.retrofited_materials_and_thickness \
+            [type(self).__name__] = {self.layer[-1].material.material_id:\
+                                    {'name' : self.layer[-1].material.name,
+                                     'thickness' : self.layer[-1].thickness}}
+            self.retrofited_materials_and_thickness \
+            [type(self).__name__][self.layer[-1].material.material_id].update(self.layer[-1].material.__dict__)
+        
