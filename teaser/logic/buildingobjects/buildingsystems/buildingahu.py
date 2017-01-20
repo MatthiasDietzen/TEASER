@@ -73,6 +73,21 @@ class BuildingAHU(object):
         self._profile_max_relative_humidity = None
         self._profile_v_flow = None
         self._profile_temperature = None
+        
+    def retrofit_AHU(self):
+        for zone in  self.parent.thermal_zones:
+            if zone.name == "Laboratory":
+                self.dehumidification = True
+                self.humidification = True
+                self.heat_recovery = True
+                self.by_pass_dehumidification = 0.2
+                self.efficiency_recovery = 0.8
+                
+                self._profile_min_relative_humidity = 0.45
+                self._profile_max_relative_humidity = 0.55
+                
+                break
+            
 
 
     @property

@@ -18,6 +18,7 @@
 		<materials:POCP>0.015236941923197337</materials:POCP>
 		<materials:GWP_100>2.6816236819748345</materials:GWP_100>
 		<materials:AP>0.005773080886017554</materials:AP>
+		<materials:costs>4.2882</materials:costs>
 	</materials:Material>
 	<materials:Material material_id="0abaa039-83ff-11e6-b385-2cd444b2e704">
 		<materials:name>Tiledroof</materials:name>
@@ -364,6 +365,7 @@
 		<materials:POCP>0.00013753346275273615</materials:POCP>
 		<materials:GWP_100>-0.9901799716705232</materials:GWP_100>
 		<materials:AP>0.000822002208142573</materials:AP>
+		<materials:costs>337.820</materials:costs>
 	</materials:Material>
 	<materials:Material material_id="0abb6391-83ff-11e6-8633-2cd444b2e704">
 		<materials:name>HolzbalkenmitLuftschichtundLehmschlag</materials:name>
@@ -1019,22 +1021,23 @@
 	</materials:Material>
 	<materials:Material material_id="0abb1557-83ff-11e6-90cc-2cd444b2e704">
 		<materials:name>Holzfaserplatten</materials:name>
-		<materials:density>260.0</materials:density>
-		<materials:thermal_conduc>0.17</materials:thermal_conduc>
+		<materials:density>160.0</materials:density>
+		<materials:thermal_conduc>0.039</materials:thermal_conduc>
 		<materials:heat_capac>1.7</materials:heat_capac>
-		<materials:PE_non_regenerable>10.822811912505538</materials:PE_non_regenerable>
-		<materials:PE_regenerable>18.367305790855653</materials:PE_regenerable>
-		<materials:secondary_fuels>0.00014182252016711077</materials:secondary_fuels>
-		<materials:water_use>2.415998546560973</materials:water_use>
-		<materials:ore_dressing_residues>0.05535600738528884</materials:ore_dressing_residues>
-		<materials:industrial_waste>0.0002306192704380777</materials:industrial_waste>
-		<materials:hazardous_wastes>0.0006354753117270538</materials:hazardous_wastes>
-		<materials:ADP>0.005194317182374077</materials:ADP>
-		<materials:EP>0.0001232399474156996</materials:EP>
-		<materials:ODP>8.035859284743424e-09</materials:ODP>
-		<materials:POCP>0.00013753346275273615</materials:POCP>
-		<materials:GWP_100>-0.9901799716705232</materials:GWP_100>
-		<materials:AP>0.000822002208142573</materials:AP>
+		<materials:PE_non_regenerable>9.83125</materials:PE_non_regenerable>
+		<materials:PE_regenerable>17.29375</materials:PE_regenerable>
+		<materials:secondary_fuels>0.000083125</materials:secondary_fuels>
+		<materials:water_use>1.5</materials:water_use>
+		<materials:ore_dressing_residues>0.095</materials:ore_dressing_residues>
+		<materials:industrial_waste>0.000284375</materials:industrial_waste>
+		<materials:hazardous_wastes>0.00115</materials:hazardous_wastes>
+		<materials:ADP>0.00450625</materials:ADP>
+		<materials:EP>0.0249</materials:EP>
+		<materials:ODP>20.125e-09</materials:ODP>
+		<materials:POCP>0.00017875</materials:POCP>
+		<materials:GWP_100>-1</materials:GWP_100>
+		<materials:AP>0.0008875</materials:AP>
+		<materials:costs>2.1109</materials:costs>
 	</materials:Material>
 	<materials:Material material_id="0abb8a87-83ff-11e6-9dfa-2cd444b2e704">
 		<materials:name>Gipskartonplatte</materials:name>

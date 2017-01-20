@@ -1276,6 +1276,7 @@ class ThermalZone(object):
         for win_count in self.windows:
             win_count.replace_window(self.parent.year_of_retrofit, window_type)
 
+
     def set_calc_default(self):
         '''sets default calculation parameters
         '''

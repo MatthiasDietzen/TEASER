@@ -245,6 +245,25 @@ class Office(NonResidential):
             pass
 
         if self.with_ahu is True:
+            
+            if self.year_of_construction <= 1993:
+                self.central_ahu.heat_recovery = False
+                self.central_ahu.efficiency_recovery = 0.0
+                self.central_ahu.efficiency_revocery_false = 1.0
+            if 1993 < self.year_of_construction <= 2005:
+                self.central_ahu.efficiency_recovery = 0.57
+                self.central_ahu.efficiency_revocery_false = 0.43
+            if 2005 < self.year_of_construction <= 2009:
+                self.central_ahu.efficiency_recovery = 0.62
+                self.central_ahu.efficiency_revocery_false = 0.38
+            if 2009 < self.year_of_construction <= 2013:
+                self.central_ahu.efficiency_recovery = 0.69
+                self.central_ahu.efficiency_revocery_false = 0.31
+            if 2013 < self.year_of_construction:
+                self.central_ahu.efficiency_recovery = 0.75
+                self.central_ahu.efficiency_revocery_false = 0.25
+                
+                
             self.central_ahu.profile_temperature = (7*[293.15] +
                                                     12*[295.15] +
                                                     6*[293.15])
