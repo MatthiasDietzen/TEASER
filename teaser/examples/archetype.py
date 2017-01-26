@@ -6,7 +6,7 @@ that building and to export that building to internal XML and a Modelica record
 """
 import teaser.data.bindings.v_0_3_9
 
-save_path = "C:/Users/Dude/Documents/UNI/Masterarbeit/TEASER/teaser/OutputData/Dymola"
+save_path = None
 
 def example_type_building():
     """"First thing we need to do is to import our Project API module"""
