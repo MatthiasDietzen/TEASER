@@ -15,7 +15,7 @@ import teaser.logic.utilities as utilitis
 import numpy as np
 
 
-def compare_orientation(bldg, number_of_elements=3):
+def compare_orientation(bldg, number_of_elements=2):
     """Fills the zone weightfactors according to orientation and tilt of
         building
 
@@ -89,7 +89,7 @@ def compare_orientation(bldg, number_of_elements=3):
                     [zone.outer_walls_areas.append(x.area) for x in walls]
                     zone.tilt_wall.append(i[1])
                     zone.orientation_wall.append(i[0])
-                elif i[1] >= 90:
+                elif number_of_elements == 4 and i[1] >= 90:
                     zone.weightfactor_ow.append(
                         sum([wall.wf_out for wall in walls]))
                     [zone.outer_walls_areas.append(x.area) for x in walls]
@@ -103,14 +103,14 @@ def compare_orientation(bldg, number_of_elements=3):
                 if number_of_elements != 4:
                     zone.weightfactor_win.append(0.0)
                     zone.window_area_list.append(0.0)
-                    zone.g_sunblind_list.append(0.0)
+                    zone.g_sunblind_list.append(1.0)
                     zone.window_areas.append(0.0)
                     zone.tilt_win.append(i[1])
                     zone.orientation_win.append(i[0])
                 elif number_of_elements == 4 and i[1] >= 90:
                     zone.weightfactor_win.append(0.0)
                     zone.window_area_list.append(0.0)
-                    zone.g_sunblind_list.append(0.0)
+                    zone.g_sunblind_list.append(1.0)
                     zone.window_areas.append(0.0)
                     zone.tilt_win.append(i[1])
                     zone.orientation_win.append(i[0])
