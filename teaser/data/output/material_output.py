@@ -53,20 +53,6 @@ def save_material(material, data_class):
         mat_pyxb.thermal_conduc = material.thermal_conduc
         mat_pyxb.heat_capac = material.heat_capac
         mat_pyxb.material_id = material.material_id
-        mat_pyxb.PE_non_regenerable = material.PE_non_regenerable
-        mat_pyxb.PE_regenerable = material.PE_regenerable
-        mat_pyxb.secondary_fuels = material.secondary_fuels
-        mat_pyxb.water_use = material.water_use
-        mat_pyxb.ore_dressing_residues = material.ore_dressing_residues
-        mat_pyxb.industrial_waste = material.industrial_waste
-        mat_pyxb.hazardous_wastes = material.hazardous_wastes
-        mat_pyxb.ADP = material.ADP
-        mat_pyxb.EP = material.EP
-        mat_pyxb.ODP = material.ODP
-        mat_pyxb.POCP = material.POCP 
-        mat_pyxb.GWP_100 = material.GWP_100
-        mat_pyxb.AP = material.AP
-        mat_pyxb.costs = material.costs
 
         mat_binding.Material.append(mat_pyxb)
         out_file = open(utilitis.get_full_path(data_class.path_mat), "w")
