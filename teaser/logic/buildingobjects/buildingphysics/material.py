@@ -154,7 +154,7 @@ class Material(object):
         '''
 
         if data_class is None:
-            data_class = self.parent.parent.parent.parent.data
+            data_class = self.parent.parent.parent.parent.parent.data
         else:
             data_class = data_class
 
