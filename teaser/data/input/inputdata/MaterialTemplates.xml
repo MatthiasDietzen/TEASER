@@ -475,7 +475,7 @@
 		<heat_capac>0.0</heat_capac>
 	</Material>
 	<Material material_id="0abb155e-83ff-11e6-9323-2cd444b2e704">
-		<name>Holzfaserdämmstoff</name>
+		<name>Holzfaserdaemmstoff</name>
 		<density>157.49</density>
 		<thermal_conduc>0.046</thermal_conduc>
 		<heat_capac>2.1</heat_capac>
@@ -486,8 +486,8 @@
 		<thermal_conduc>0.06</thermal_conduc>
 		<heat_capac>1.273</heat_capac>
 	</Material>
-	<Material material_id="0abb8a9a-83ff-s451-8b7e-2cd444b2e704">
-		<name>Einblasdämmstoff_aus_Zellulosefasern</name>
+	<Material material_id="0abb8a9a-83ff-11e6-897e-2cd444b2e704">
+		<name>Einblasdaemmstoff_aus_Zellulosefasern</name>
 		<density>65.0</density>
 		<thermal_conduc>0.39</thermal_conduc>
 		<heat_capac>1.6</heat_capac>
